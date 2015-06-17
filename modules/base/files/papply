@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo puppet apply /home/vagrant/puppet-training/manifests/site.pp --modulepath=/home/vagrant/puppet-training/modules $*

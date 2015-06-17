@@ -1,0 +1,10 @@
+Listen <%= @vhost_port %>
+<VirtualHost *:<%= @vhost_port %>>
+    DocumentRoot /var/www/html
+    ServerName <%= @site_name %>
+</VirtualHost>
+
+# <%= @ipaddress %>
+# <%= @fqdn %>
+# <%= @memorysize %>
+# <%= @operatingsystem %>

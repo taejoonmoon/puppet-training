@@ -1,0 +1,15 @@
+driftfile /var/lib/ntp/ntp.drift
+
+<% if server != 'UNSET' -%>
+server <%= server %> prefer
+<% end -%>
+server 0.ubuntu.pool.ntp.org
+server 1.ubuntu.pool.ntp.org
+server 2.ubuntu.pool.ntp.org
+server 3.ubuntu.pool.ntp.org
+server ntp.ubuntu.com
+
+restrict -4 default kod notrap nomodify nopeer noquery
+restrict -6 default kod notrap nomodify nopeer noquery
+restrict 127.0.0.1
+restrict ::1
